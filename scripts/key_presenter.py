@@ -57,6 +57,12 @@ def main():
             # Gray shirt/skin remain outside hue+S threshold; deep screen shadows key out.
             bg=cv2.inRange(hsv, (74,92,13), (103,255,255))
             bg=cv2.morphologyEx(bg,cv2.MORPH_OPEN,kernel)
+            # Small isolated teal patches occur in shirt folds and the watch.
+            # Keep them opaque while retaining the screen gaps below the arms.
+            _, labels, stats, _ = cv2.connectedComponentsWithStats(bg)
+            screen = stats[:, cv2.CC_STAT_AREA] >= 160
+            screen[0] = False
+            bg = screen.astype(np.uint8)[labels] * 255
             alpha=255-cv2.GaussianBlur(bg,(5,5),0.9)
             # Neutralize excess green close to the matte edge. Leave skin,
             # clothing and opaque interior details at their recorded colors.

@@ -1,26 +1,22 @@
-# Upwork Intro Motion — Remotion Production
+# Abdullah Al-Wuhaishi’s Upwork introduction
 
-Professional intro video for Abdullah's Upwork profile. The approved 27.77-second English script, green-screen recording, real portfolio media paths, storyboard and detailed Codex instructions are bundled in **`upwork_intro_production_package.zip`**.
+A 27.77-second Remotion composition featuring Abdullah’s original green-screen recording and portfolio work for Al-Halimi, Abu Shuaib and OSHENZ.
 
-## Start here (Codex Cloud)
+- [Download the finished video](https://github.com/Abdullahmohammed00zzmm/upwork-intro-motion/releases/download/v1.0.0/upwork-intro-final.mp4)
+- [Production notes and verification](work_log/STATUS.md)
 
-1. Ensure `upwork_intro_production_package.zip` is committed to the root of this repository.
-2. In the repo, run `unzip -o upwork_intro_production_package.zip -d .`.
-3. Read `README_START_AR.md`, `CODEX_TASK.md`, and `PRODUCTION/` before coding.
-4. Execute `CODEX_TASK.md`: stage original work from the portfolio source, key the green screen, create Remotion animation, check a few still frames, then render **one complete 1920×1080 H.264/AAC MP4**.
-5. Commit source and progress updates to `work_log/STATUS.md`. Make the final MP4 available via an accessible artifact or release.
+## Render in Codex Cloud
 
-**Do not** replace the real client projects with stock media, change the spoken script, make an AI avatar, or require an 8-second preview video. Preserve the original recorded voice exactly once.
+The versioned production ZIP contains the original presenter footage. The original portfolio media is staged under `public/media/`. The staging script can also restore those files from the portfolio repository or its published site.
 
-### Original portfolio media
+```bash
+npm ci
+python3 -m venv /tmp/upwork-key
+/tmp/upwork-key/bin/pip install -r requirements-key.txt
+KEY_PYTHON=/tmp/upwork-key/bin/python npm run render
+bash scripts/verify_media.sh
+```
 
-The actual project media is stored in the owner's portfolio repository: `Abdullahmohammed00zzmm/abdullah-portfolio`. The package includes `scripts/stage_assets.sh` to import named media (from the repository if accessible, otherwise the published portfolio site).
+The render command extracts the source from the production ZIP and generates the transparent presenter layer as needed. It renders the composition at 1920×1080, 30 fps and 833 frames, and copies the recording’s original AAC stream into `output/upwork-intro-final.mp4`. Set `REMOTION_BROWSER` to a compatible Chromium executable if using the cloud environment’s installed browser.
 
-### Current status
-
-- [x] GitHub repository created
-- [ ] Production ZIP uploaded (required before Codex)
-- [ ] Green screen and motion compositing
-- [ ] Final MP4 rendered and delivered
-
-This repository is public and the production ZIP contains the presenter's video and voice recording.
+The scene composition, typography and timing are in `src/`. The approved design and storyboard are in `PRODUCTION/`.

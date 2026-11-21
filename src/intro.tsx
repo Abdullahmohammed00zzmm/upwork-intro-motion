@@ -64,7 +64,9 @@ function BeatPanel({side, duration, last, children}: {
   side: 'left' | 'right'; duration: number; last: boolean; children: ReactNode;
 }) {
   const frame = useCurrentFrame();
-  const exit = last ? 0 : progress(frame, duration - 8, duration);
+  const exit = last ? 0 : interpolate(frame, [duration - 6, duration], [0, 1], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.quad),
+  });
   return (
     <div className={`panel panel--${side}`} style={{opacity: 1 - exit, translate: `0 ${-9 * exit}px`}}>
       {children}
