@@ -24,6 +24,8 @@
 - Remotion’s default color settings produced full-range video. The final render explicitly uses Rec. 709 with PNG frame intermediates.
 - The original AAC has a brief decoded peak near full scale. The original recording was preserved byte for byte.
 
+- GitHub rejected the release attachment upload. The committed MP4 downloads directly from GitHub and the downloaded file matches the verified render byte for byte.
+
 ## Exact final render command
 
 ```bash

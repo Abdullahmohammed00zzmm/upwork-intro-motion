@@ -2,7 +2,7 @@
 
 A 27.77-second Remotion composition featuring Abdullah’s original green-screen recording and portfolio work for Al-Halimi, Abu Shuaib and OSHENZ.
 
-- [Download the finished video](https://github.com/Abdullahmohammed00zzmm/upwork-intro-motion/releases/download/v1.0.0/upwork-intro-final.mp4)
+- [Download the finished video](https://raw.githubusercontent.com/Abdullahmohammed00zzmm/upwork-intro-motion/c14d521b80e8da7680a0997b909b2ac5019d2db0/output/upwork-intro-final.mp4)
 - [Production notes and verification](work_log/STATUS.md)
 
 ## Render in Codex Cloud
