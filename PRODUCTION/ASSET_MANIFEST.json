@@ -1,0 +1,83 @@
+{
+  "source_repo": "Abdullahmohammed00zzmm/abdullah-portfolio",
+  "source_branch": "main",
+  "source_root": "public/",
+  "site_fallback": "https://abdullah-portfolio-a4s.pages.dev/",
+  "destination_root": "public/",
+  "assets_embedded_in_zip": false,
+  "note": "All path strings verified against the linked repository tree on 2026-11-21. The assets remain remote until staged. Do not substitute generic stock imagery on failure.",
+  "files": [
+    {
+      "path": "media/social/al-halimi/full/01-friday.webp",
+      "project": "Al-Halimi",
+      "kind": "posts",
+      "priority": "required"
+    },
+    {
+      "path": "media/social/al-halimi/full/02-energy.webp",
+      "project": "Al-Halimi",
+      "kind": "posts",
+      "priority": "required"
+    },
+    {
+      "path": "media/social/al-halimi/full/03-breakfast.webp",
+      "project": "Al-Halimi",
+      "kind": "posts",
+      "priority": "optional"
+    },
+    {
+      "path": "media/identity/al-halimi/07.webp",
+      "project": "Al-Halimi",
+      "kind": "identity",
+      "priority": "required"
+    },
+    {
+      "path": "media/identity/al-halimi/09.webp",
+      "project": "Al-Halimi",
+      "kind": "identity",
+      "priority": "optional"
+    },
+    {
+      "path": "media/videos/al-halimi-ad.mp4",
+      "project": "Al-Halimi",
+      "kind": "short-ad-video",
+      "priority": "required"
+    },
+    {
+      "path": "media/social/abu-shuaib/full/01-trust.webp",
+      "project": "Abu Shuaib",
+      "kind": "posts",
+      "priority": "required"
+    },
+    {
+      "path": "media/social/abu-shuaib/full/02-road.webp",
+      "project": "Abu Shuaib",
+      "kind": "posts",
+      "priority": "required"
+    },
+    {
+      "path": "media/identity/abu-shuaib/07.webp",
+      "project": "Abu Shuaib",
+      "kind": "identity",
+      "priority": "required"
+    },
+    {
+      "path": "media/social/oshenz/full/01-shark-fingers.webp",
+      "project": "OSHENZ",
+      "kind": "posts",
+      "priority": "required"
+    },
+    {
+      "path": "media/social/oshenz/full/03-shopping-list.webp",
+      "project": "OSHENZ",
+      "kind": "posts",
+      "priority": "optional"
+    },
+    {
+      "path": "media/social/oshenz/full/04-geant-store.webp",
+      "project": "OSHENZ",
+      "kind": "posts",
+      "priority": "required"
+    }
+  ]
+}

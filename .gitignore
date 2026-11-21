@@ -1,0 +1,13 @@
+node_modules/
+out/
+.cache/
+.remotion/
+*.log
+.env
+.env.*
+!*.example
+# Don't accidentally expose secrets
+public/presenter_keyed.webm
+public/presenter_cropped.mp4
+*.pyc
+output/.render.*/

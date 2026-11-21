@@ -1,0 +1,92 @@
+{
+  "duration_sec": 27.766667,
+  "fps": 30,
+  "frames": 833,
+  "caveat": "Boundaries are approximate: based on silencedetect and a reviewed script, not word-level ASR. Codex must align cues against embedded audio without retiming footage.",
+  "pause_markers_observed": [
+    {
+      "silence_from": 3.154,
+      "silence_to": 3.559
+    },
+    {
+      "silence_from": 3.862,
+      "silence_to": 4.059
+    },
+    {
+      "silence_from": 12.978,
+      "silence_to": 13.167
+    },
+    {
+      "silence_from": 15.006,
+      "silence_to": 15.21
+    },
+    {
+      "silence_from": 16.753,
+      "silence_to": 17.382
+    },
+    {
+      "silence_from": 21.766,
+      "silence_to": 22.044
+    },
+    {
+      "silence_from": 22.61,
+      "silence_to": 22.969
+    },
+    {
+      "silence_from": 25.185,
+      "silence_to": 25.459
+    }
+  ],
+  "scenes": [
+    {
+      "scene": 1,
+      "name": "Hook",
+      "from_sec": 0,
+      "to_sec": 3.55,
+      "from_frame": 0,
+      "to_frame_exclusive": 106,
+      "text": "Do you need Arabic posts and videos for your business?",
+      "exact_align": false
+    },
+    {
+      "scene": 2,
+      "name": "Services",
+      "from_sec": 3.55,
+      "to_sec": 10.0,
+      "from_frame": 106,
+      "to_frame_exclusive": 300,
+      "text": "I'm Abdullah. I design social media posts, make short ad videos, and help give your brand its own look.",
+      "exact_align": false
+    },
+    {
+      "scene": 3,
+      "name": "Process",
+      "from_sec": 10.0,
+      "to_sec": 17.38,
+      "from_frame": 300,
+      "to_frame_exclusive": 521,
+      "text": "First, we talk about your business, your customers, and your message. Then, I create the content.",
+      "exact_align": false
+    },
+    {
+      "scene": 4,
+      "name": "Portfolio",
+      "from_sec": 17.38,
+      "to_sec": 22.97,
+      "from_frame": 521,
+      "to_frame_exclusive": 689,
+      "text": "You can see my work for Al-Halimi, Abu Shuaib, and OSHENZ in my profile.",
+      "exact_align": false
+    },
+    {
+      "scene": 5,
+      "name": "CTA",
+      "from_sec": 22.97,
+      "to_sec": 27.766667,
+      "from_frame": 689,
+      "to_frame_exclusive": 833,
+      "text": "Need one project or new content every month? Send me a message here on Upwork.",
+      "exact_align": false
+    }
+  ]
+}
